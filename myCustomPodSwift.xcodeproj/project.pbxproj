@@ -15,6 +15,7 @@
 		40FB934D233910980044640B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40FB934B233910980044640B /* Main.storyboard */; };
 		40FB934F2339109A0044640B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40FB934E2339109A0044640B /* Assets.xcassets */; };
 		40FB93522339109A0044640B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40FB93502339109A0044640B /* LaunchScreen.storyboard */; };
+		40FB9358233912080044640B /* myCustomPod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB9357233912080044640B /* myCustomPod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		40FB934E2339109A0044640B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40FB93512339109A0044640B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40FB93532339109A0044640B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40FB9357233912080044640B /* myCustomPod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myCustomPod.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			children = (
 				40FB932A23390FB20044640B /* myCustomPodSwift.h */,
 				40FB932B23390FB20044640B /* Info.plist */,
+				40FB9357233912080044640B /* myCustomPod.swift */,
 			);
 			path = myCustomPodSwift;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				TargetAttributes = {
 					40FB932623390FB20044640B = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					40FB932F23390FB20044640B = {
 						CreatedOnToolsVersion = 10.1;
@@ -260,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40FB9358233912080044640B /* myCustomPod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +440,7 @@
 		40FB933C23390FB20044640B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -452,6 +458,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Personal.myCustomPodSwift;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -460,6 +467,7 @@
 		40FB933D23390FB20044640B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -485,6 +493,7 @@
 		40FB933F23390FB20044640B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MHWHQ8YWTK;
 				INFOPLIST_FILE = myCustomPodSwiftTests/Info.plist;
@@ -503,6 +512,7 @@
 		40FB934023390FB20044640B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MHWHQ8YWTK;
 				INFOPLIST_FILE = myCustomPodSwiftTests/Info.plist;
