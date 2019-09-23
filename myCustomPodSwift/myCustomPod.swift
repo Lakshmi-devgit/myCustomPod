@@ -8,6 +8,10 @@
 
 public final class myCustomPod {
     
+    init() {
+       
+    }
+    
     let name = "myCustomPod"
     
     public func add(a: Int, b: Int) -> Int {
